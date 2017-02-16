@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body {
+			max-width: 640px;
+			min-width: 320px;
+		}
+		.clearfix {
+			height: 0;
+			line-height: 0;
+			overflow: hidden;
+			visibility: hidden;
+			display: block;
+			clear: both;
+		}
+		.container {
+			width: 100%;
+		}
+		.container .caption {
+			width: 100%;
+			height: 100px;
+			background-color: blue;
+		}
+		.container .leftTab {
+			float: left;
+			width: 100px;
+			height: 300px;
+			background-color: yellow;
+		}
+		.container .rightContent {
+			overflow: hidden;
+			height: 300px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+<div class="container .clearfix">
+	<div class="caption"></div>
+	<div class="leftTab"></div>
+	<div class="rightContent"></div>
+</div>
+	<script src="jquery/jquery.min.js"></script>
+	<script src="underscore"></script>
+	<script>
+		$(function(){
+			
+		})
+	</script>
+</body>
+</html>
